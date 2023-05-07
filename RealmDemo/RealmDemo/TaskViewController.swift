@@ -13,5 +13,6 @@ final class TaskViewController: UIViewController {
         super.viewDidLoad()
         
         // some core here
+        print("There is a task view controller")
     }
 }

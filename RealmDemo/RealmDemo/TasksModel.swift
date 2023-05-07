@@ -14,4 +14,8 @@ class Task: Object {
     @objc dynamic var isImportant = false
 }
 
+class TaskList: Object {
+    @objc dynamic var taskList = [Task]()
+}
+
 
