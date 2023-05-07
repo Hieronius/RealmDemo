@@ -12,6 +12,12 @@ class Task: Object {
     @objc dynamic var taskName = "String"
     @objc dynamic var deadLine = "String"
     @objc dynamic var isImportant = false
+    
+    init(taskName: String = "String", deadLine: String = "String", isImportant: Bool = false) {
+        self.taskName = taskName
+        self.deadLine = deadLine
+        self.isImportant = isImportant
+    }
 }
 
 class TaskList: Object {
