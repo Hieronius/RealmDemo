@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DD8FD23D2A07C59F0081DFA0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DD8FD23C2A07C59F0081DFA0 /* Realm */; };
 		DD8FD23F2A07C59F0081DFA0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD8FD23E2A07C59F0081DFA0 /* RealmSwift */; };
+		DD8FD2412A07E6990081DFA0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FD2402A07E6990081DFA0 /* TaskViewController.swift */; };
+		DD8FD2432A07E7050081DFA0 /* RealmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FD2422A07E7050081DFA0 /* RealmDataManager.swift */; };
+		DD8FD2452A07E7710081DFA0 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8FD2442A07E7710081DFA0 /* TasksModel.swift */; };
 		DDA07EDB2A06816C00D9F5A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA07EDA2A06816C00D9F5A7 /* AppDelegate.swift */; };
 		DDA07EDD2A06816C00D9F5A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA07EDC2A06816C00D9F5A7 /* SceneDelegate.swift */; };
 		DDA07EDF2A06816C00D9F5A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA07EDE2A06816C00D9F5A7 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD8FD2402A07E6990081DFA0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		DD8FD2422A07E7050081DFA0 /* RealmDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataManager.swift; sourceTree = "<group>"; };
+		DD8FD2442A07E7710081DFA0 /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 		DDA07ED72A06816C00D9F5A7 /* RealmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA07EDA2A06816C00D9F5A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA07EDC2A06816C00D9F5A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				DDA07EDA2A06816C00D9F5A7 /* AppDelegate.swift */,
 				DDA07EDC2A06816C00D9F5A7 /* SceneDelegate.swift */,
 				DDA07EDE2A06816C00D9F5A7 /* ViewController.swift */,
+				DD8FD2402A07E6990081DFA0 /* TaskViewController.swift */,
+				DD8FD2422A07E7050081DFA0 /* RealmDataManager.swift */,
+				DD8FD2442A07E7710081DFA0 /* TasksModel.swift */,
 				DDA07EE02A06816C00D9F5A7 /* Main.storyboard */,
 				DDA07EE32A06817000D9F5A7 /* Assets.xcassets */,
 				DDA07EE52A06817000D9F5A7 /* LaunchScreen.storyboard */,
@@ -150,8 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA07EDF2A06816C00D9F5A7 /* ViewController.swift in Sources */,
+				DD8FD2412A07E6990081DFA0 /* TaskViewController.swift in Sources */,
+				DD8FD2452A07E7710081DFA0 /* TasksModel.swift in Sources */,
 				DDA07EDB2A06816C00D9F5A7 /* AppDelegate.swift in Sources */,
 				DDA07EDD2A06816C00D9F5A7 /* SceneDelegate.swift in Sources */,
+				DD8FD2432A07E7050081DFA0 /* RealmDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
