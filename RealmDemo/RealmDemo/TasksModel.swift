@@ -13,7 +13,8 @@ class Task: Object {
     @objc dynamic var deadLine = "String"
     @objc dynamic var isImportant = false
     
-    init(taskName: String = "String", deadLine: String = "String", isImportant: Bool = false) {
+    convenience init(taskName: String, deadLine: String, isImportant: Bool) {
+        self.init()
         self.taskName = taskName
         self.deadLine = deadLine
         self.isImportant = isImportant
@@ -21,7 +22,7 @@ class Task: Object {
 }
 
 class TaskList: Object {
-    @objc dynamic var taskList = [Task]()
+    let taskList = List<Task>()
 }
 
 
