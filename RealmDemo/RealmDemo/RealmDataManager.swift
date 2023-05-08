@@ -16,11 +16,19 @@ protocol RealmDataManagerProtocol: AnyObject {
     
     func delete(object: Object)
     
-    func removeAllTasks(objects: [Object])
+    func deleteWithObject()
+    
+    func deleteSingleTask(object: Object)
+    
+    func removeAllTasks()
     
     func loadTasks()
     
     func loadTaskList()
+    
+    func testSave()
+    
+    func testDelete()
 }
 
 class RealmDataManager: RealmDataManagerProtocol {
@@ -34,37 +42,47 @@ class RealmDataManager: RealmDataManagerProtocol {
         realm.beginWrite()
         // do some actions with storage
         realm.add(object)
+        print("\(object) has been added")
         // end the work and save storage
         // use "try!" because there can be no changes
+        try! realm.commitWrite()
+    }
+    
+    func deleteWithObject() {
+        realm.beginWrite()
+        realm.delete(realm.objects(Task.self))
         try! realm.commitWrite()
     }
     
     func delete(object: Object) {
         realm.beginWrite()
         realm.delete(object)
+        print("\(object) has been deleted")
         try! realm.commitWrite()
     }
     
-    func removeAllTasks(objects: [Object]) {
+    func deleteSingleTask(object: Object) {
+        realm.beginWrite()
+        // realm.delete(realm.ob)
+    }
+    
+    func removeAllTasks() {
         realm.beginWrite()
         realm.deleteAll()
         try! realm.commitWrite()
+        print("Realm storage has been erased")
     }
     
     func loadTasks() {
         for task in realm.objects(Task.self) {
-            print(task.taskName)
-            print(task.deadLine)
-            print("is it important - \(task.isImportant)")
+            print("\(task.taskName) has been loaded)")
         }
     }
     
     func loadTaskList() {
         for list in realm.objects(TaskList.self) {
             for task in list.taskList {
-                print(task.taskName)
-                print(task.deadLine)
-                print("is it important - \(task.isImportant)")
+                print("\(task.taskName) has been loaded)")
             }
         }
     }

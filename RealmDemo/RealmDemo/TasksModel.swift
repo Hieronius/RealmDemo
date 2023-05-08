@@ -21,6 +21,8 @@ class Task: Object {
     }
 }
 
+// You can't just use Array<Object>
+// Should use List<Object< instead without any keywords like @objc and dynamic
 class TaskList: Object {
     let taskList = List<Task>()
 }

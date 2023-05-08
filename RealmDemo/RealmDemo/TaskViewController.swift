@@ -20,13 +20,25 @@ final class TaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // some core here
-        print("There is a task view controller")
         realmDataManager = RealmDataManager()
         
-        // realmDataManager?.save(object: task1)
-        realmDataManager?.loadTasks()
-        print(realmDataManager?.loadTasks())
+         // realmDataManager?.removeAllTasks()
+        
+//        realmDataManager?.save(object: task1)
+//        realmDataManager?.save(object: task2)
+//        realmDataManager?.save(object: task3)
+//        realmDataManager?.save(object: task4)
+//        realmDataManager?.save(object: task5)
+        
+          // realmDataManager?.loadTasks()
+        
+          // realmDataManager?.delete(object: task1)
+         // realmDataManager?.deleteWithObject()
+        
+        realmDataManager.
+        
+          realmDataManager?.loadTasks()
+        
         
     }
 }
