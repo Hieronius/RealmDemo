@@ -87,5 +87,21 @@ class RealmDataManager: RealmDataManagerProtocol {
         }
     }
     
+    func testSave() {
+        realm.beginWrite()
+        realm.add(Task(taskName: "111", deadLine: "222", isImportant: true))
+        try! realm.commitWrite()
+    }
+    
+    func testDelete() {
+        let task = Task(taskName: "111", deadLine: "222", isImportant: true)
+        realm.beginWrite()
+        // realm.delete()
+        // let index = realm.objects(Task.self).firstIndex(of: task)
+        // realm.objects(Task.self).
+        
+        try! realm.commitWrite()
+    }
+    
 }
 

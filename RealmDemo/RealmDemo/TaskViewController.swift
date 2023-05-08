@@ -15,6 +15,8 @@ final class TaskViewController: UIViewController {
     let task4 = Task(taskName: "Pay for rent", deadLine: "10.10.23", isImportant: true)
     let task5 = Task(taskName: "Grab documents", deadLine: "11.07.23", isImportant: false)
     
+    let taskList = TaskList()
+    
     private var realmDataManager: RealmDataManagerProtocol?
     
     override func viewDidLoad() {
@@ -22,22 +24,17 @@ final class TaskViewController: UIViewController {
         
         realmDataManager = RealmDataManager()
         
-         // realmDataManager?.removeAllTasks()
-        
-//        realmDataManager?.save(object: task1)
-//        realmDataManager?.save(object: task2)
-//        realmDataManager?.save(object: task3)
-//        realmDataManager?.save(object: task4)
-//        realmDataManager?.save(object: task5)
+          // realmDataManager?.removeAllTasks()
+        // realmDataManager.
         
           // realmDataManager?.loadTasks()
         
-          // realmDataManager?.delete(object: task1)
-         // realmDataManager?.deleteWithObject()
+        realmDataManager?.save(object: taskList)
         
-        realmDataManager.
+        realmDataManager?.delete(object: taskList)
         
-          realmDataManager?.loadTasks()
+        // realmDataManager?.loadTasks()
+        realmDataManager?.loadTaskList()
         
         
     }
